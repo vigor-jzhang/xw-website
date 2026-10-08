@@ -127,6 +127,9 @@ h2 { font: 500 1.85rem/1.2 var(--serif); margin: 0 0 24px; letter-spacing: -.01e
 .authors, .venue, .status { margin: 0; font-size: .93rem; }
 .authors { color: var(--muted); }
 .me { color: var(--text); font-weight: 600; }
+.pubs-compact { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; font-size: .88rem; line-height: 1.55; color: var(--muted); }
+.pubs-compact li { padding-left: 14px; border-left: 2px solid var(--line); }
+.pubs-compact .me { font-weight: 500; }
 .featured {
   background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent);
   border-radius: 10px; padding: 22px 24px;

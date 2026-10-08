@@ -163,8 +163,7 @@ h2 { font: 500 1.85rem/1.2 var(--serif); margin: 0 0 24px; letter-spacing: -.01e
 .term { color: var(--muted); font-size: .9rem; white-space: nowrap; }
 
 /* ---------- CV ---------- */
-.cv-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; }
-.cv-grid .subhead:first-child { margin-top: 0; }
+.cv-grid > div:first-child > .subhead:first-child { margin-top: 0; }
 .cv-grid p { font-size: .95rem; margin: 0 0 12px; }
 
 /* ---------- references ---------- */
@@ -197,7 +196,7 @@ footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--lin
   .profile { grid-template-columns: 1fr; }
   .portrait { width: 104px; grid-row: auto; margin-bottom: 16px; }
   .lede { font-size: 1.2rem; }
-  .facts, .cv-grid, .refs { grid-template-columns: 1fr; }
+  .facts, .refs { grid-template-columns: 1fr; }
   .courses li { grid-template-columns: 1fr auto; gap: 2px 12px; }
   .courses .cname { grid-column: 1 / -1; grid-row: 2; }
   .talks li, .timeline li { grid-template-columns: 1fr; gap: 0; }
@@ -220,6 +219,6 @@ footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--lin
   h2 { font-size: 15pt; margin-bottom: 10px; }
   .subhead { margin: 16px 0 8px; }
   .paper, .ref, .courses li, .timeline li, .talks li { break-inside: avoid; }
-  .facts, .cv-grid, .refs { gap: 12px; }
+  .facts, .refs { gap: 12px; }
   a { color: inherit; }
 }

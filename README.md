@@ -9,7 +9,7 @@ A static personal website (plain HTML + CSS, no build step).
 ## To finish before going live
 
 1. **Links** — in `index.html`, uncomment the Google Scholar / LinkedIn / SSRN lines in the sidebar and fill in the URLs.
-2. **Job market paper** — confirm the featured paper, and optionally add an abstract and a PDF link
+2. **Job market paper** — optionally add an abstract and a PDF link
    (there is a commented-out template inside the "Job Market Paper" block).
 
 ## Publish with GitHub Pages

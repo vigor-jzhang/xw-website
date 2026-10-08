@@ -166,14 +166,6 @@ h2 { font: 500 1.85rem/1.2 var(--serif); margin: 0 0 24px; letter-spacing: -.01e
 .cv-grid > div:first-child > .subhead:first-child { margin-top: 0; }
 .cv-grid p { font-size: .95rem; margin: 0 0 12px; }
 
-/* ---------- references ---------- */
-.refs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.ref {
-  display: flex; flex-direction: column; gap: 2px; font-size: .9rem;
-  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px;
-}
-.ref strong { font: 500 1.08rem var(--serif); margin-bottom: 2px; }
-.ref a { margin-top: 6px; word-break: break-all; }
 
 footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 24px; }
 
@@ -186,7 +178,6 @@ footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--lin
   .affil { margin-bottom: 0; }
   .market, .links { grid-column: 1 / -1; }
   .market { justify-self: start; margin-top: 20px; }
-  .refs { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 620px) {
   .topbar-inner { padding: 0 16px; gap: 14px; }
@@ -196,7 +187,7 @@ footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--lin
   .profile { grid-template-columns: 1fr; }
   .portrait { width: 104px; grid-row: auto; margin-bottom: 16px; }
   .lede { font-size: 1.2rem; }
-  .facts, .refs { grid-template-columns: 1fr; }
+  .facts { grid-template-columns: 1fr; }
   .courses li { grid-template-columns: 1fr auto; gap: 2px 12px; }
   .courses .cname { grid-column: 1 / -1; grid-row: 2; }
   .talks li, .timeline li { grid-template-columns: 1fr; gap: 0; }
@@ -218,7 +209,7 @@ footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--lin
   section + section { padding-top: 12px; }
   h2 { font-size: 15pt; margin-bottom: 10px; }
   .subhead { margin: 16px 0 8px; }
-  .paper, .ref, .courses li, .timeline li, .talks li { break-inside: avoid; }
-  .facts, .refs { gap: 12px; }
+  .paper, .courses li, .timeline li, .talks li { break-inside: avoid; }
+  .facts { gap: 12px; }
   a { color: inherit; }
 }
